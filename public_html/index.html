@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/style.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="js/script.ndd.js"></script>
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+        <header><h1>Slep z pluszakami</h1></header>
+        <ul id="produkty">
+            <li>
+                <section id="przedmiot1" class="przedmioty" draggable="true">
+                    <img src="img/teddy.jpg" alt="element miś"/>
+                    <div class="opis"> <!-- Korzystamy z diva, bo chcemy zrobić coś z wyglądem w CSS, nie ma to znaczenia dla strony i botów-->
+                        <h4 class="nazwa">Miś nr 1</h4> <!-- aby było zgodnie ze specyfikacją - trzeba dać nagłówek w sekcji-->
+                        <b>Cena:</b> <span class="cena">45 </span>zł <!-- nie używamy strong, bo ma znaczenie pozycjonujące, a bold tylko pogrubia-->
+                    </div>
+                </section>
+            </li>
+            <li>
+                <section id="przedmiot2" class="przedmioty">
+                <img src="img/teddy.jpg" alt="element miś"/>
+                <div class="opis"> <!-- Korzystamy z diva, bo chcemy zrobić coś z wyglądem w CSS, nie ma to znaczenia dla strony i botów-->
+                    <h4 class="nazwa">Miś nr 2</h4> <!-- aby było zgodnie ze specyfikacją - trzeba dać nagłówek w sekcji-->
+                    <b>Cena:</b> <span class="cena">50 </span>zł <!-- nie używamy strong, bo ma znaczenie pozycjonujące, a bold tylko pogrubia-->
+                </div>
+                </section>
+            </li>
+            <li>
+                <section id="przedmiot3" class="przedmioty">
+                    <img src="img/teddy.jpg" alt="element miś"/>
+                    <div class="opis"> <!-- Korzystamy z diva, bo chcemy zrobić coś z wyglądem w CSS, nie ma to znaczenia dla strony i botów-->
+                        <h4 class="nazwa">Miś nr 3</h4> <!-- aby było zgodnie ze specyfikacją - trzeba dać nagłówek w sekcji-->
+                        <b>Cena:</b> <span class="cena">60 </span>zł <!-- nie używamy strong, bo ma znaczenie pozycjonujące, a bold tylko pogrubia-->
+                    </div>
+                </section>
+            </li>
+            <li>
+                <section id="przedmiot4" class="przedmioty">
+                    <img src="img/teddy.jpg" alt="element miś"/>
+                    <div class="opis"> <!-- Korzystamy z diva, bo chcemy zrobić coś z wyglądem w CSS, nie ma to znaczenia dla strony i botów-->
+                        <h4 class="nazwa">Miś nr 4</h4> <!-- aby było zgodnie ze specyfikacją - trzeba dać nagłówek w sekcji-->
+                        <b>Cena:</b> <span class="cena">75 </span>zł <!-- nie używamy strong, bo ma znaczenie pozycjonujące, a bold tylko pogrubia-->
+                    </div>
+                </section>
+            </li>
+            <li>
+                <section id="przedmiot5" class="przedmioty">
+                    <img src="img/teddy.jpg" alt="element miś"/>
+                    <div class="opis"> <!-- Korzystamy z diva, bo chcemy zrobić coś z wyglądem w CSS, nie ma to znaczenia dla strony i botów-->
+                        <h4 class="nazwa">Miś nr 5</h4> <!-- aby było zgodnie ze specyfikacją - trzeba dać nagłówek w sekcji-->
+                        <b>Cena:</b> <span class="cena">90 </span>zł <!-- nie używamy strong, bo ma znaczenie pozycjonujące, a bold tylko pogrubia-->
+                    </div>
+                </section>
+            </li>
+            <li>
+                <section id="przedmiot6" class="przedmioty">
+                    <img src="img/teddy.jpg" alt="element miś"/>
+                    <div class="opis"> <!-- Korzystamy z diva, bo chcemy zrobić coś z wyglądem w CSS, nie ma to znaczenia dla strony i botów-->
+                        <h4 class="nazwa">Miś nr 6</h4> <!-- aby było zgodnie ze specyfikacją - trzeba dać nagłówek w sekcji-->
+                        <b>Cena:</b> <span class="cena">99 </span>zł <!-- nie używamy strong, bo ma znaczenie pozycjonujące, a bold tylko pogrubia-->
+                    </div>
+                </section>
+            </li>            
+        </ul>
+        <!-- Koszyk jest czymś wiązanym z bokiem strony, jest zazwyczaj umieszczony z boku - dlatego dajemy tag aside -->
+        <aside id="koszyk">
+            <h4 id="naglowek_koszyka">Koszyk</h4> <!-- Robimy tak (nadajemy id), aby nie ingerować w inne elementy-->
+            <ul id =koszyk_sklepowy>
+                
+            </ul>
+            <div id="info_przeniesienie">Przenieś przedmiot tutaj</div>
+            <div id="cena"><b>Razem: </b><span>0.00</span>zł</div>
+        </aside>
+    </body>
+</html>

@@ -1,0 +1,76 @@
+h1{
+    font-size: 20px;
+}
+header{
+    margin: 5px 20px;
+}
+
+#produkty{
+    list-style: none;
+    width: 60%; /* zapewnia że nasze produkty zajmują tylko 60 % szer strony*/
+    float: left; /* lista ul opływa z lewej strony, dzięki czemu możemy cos wrzucić z prawej */
+}
+#produkty li{
+    float:left;
+    margin: 10px;
+    width: 284px;
+    height: 177px;
+    border: 1px solid red;
+}
+/*Zajmujemy się opisem, aby pojawiał się jak najedziemy i był lekko przezroczysty*/
+/*pozycjonowanie - elementowi wyższemu nadajemy pozyję relatywną, a nsatępnie elementowi w nim się znajdującemu pozycję 
+    absolutną, co sprawi że będzi epozycjonowany względem wyższego przedmiotu */
+.przedmioty{
+    position: relative;
+    cursor: move;
+}
+.przedmioty .opis{
+    position: absolute;
+    background: rgba(0,0,0, 0.5);
+    bottom: 0px;
+    color: #f0dddd;
+    width: 284px;
+    text-align: center;
+    padding: 5px 0px;
+    display: none;
+}
+#naglowek_koszyka{
+    text-align: center;
+    font-size: 20px;
+}
+#koszyk{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    float: right;
+    background-color: #CCC;
+    width: 25%;
+    padding: 20px 5%;
+}
+#cena{
+    text-align: right; /*wyrównujemy tekst w prawo*/
+    margin: 10px 0px;
+}
+#info_przeniesienie{
+    font-size: 20px;
+    text-align: center;
+    display: none;
+}
+#koszyk_sklepowy{
+    list-style: none;
+}
+.produkt_w_koszyku{
+    border-bottom: 1px dotted teal;
+    padding: 4px 10px;
+}
+.cena_w_koszyku{
+    position:absolute;
+    right: 20px;
+}
+
+
+
+
+
+
+
